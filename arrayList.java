@@ -72,7 +72,44 @@ class TestArrayList
 				.print( "Mostrando nuevo array > ");
 		System.out
 				.println(cadena);
+
+		/*
+		 * SET
+		 */
+
+		//System.out
+		//		.println( "enteros.set(12,15); >>" );
+		//enteros.set(12,15); // LA POSICION DEBE EXISTIR PREVIAMENTE
+
+		// indexOf
+		System.out
+				.println( "enteros.indexOf(15);");
 		
+		System.out
+				.println( enteros.indexOf(15));
+		
+		
+		// lastIndexOf
+		System.out
+				.println("enteros.lastIndexOf(2);");
+		
+		System.out
+				.println(enteros.lastIndexOf(18));
+		
+		// Añadir a una posicion que aun no existe
+		// al igual que con set no puede hacerlo.
+		try
+		{
+		System.out
+			.println("enteros.add(100,122);");
+			enteros.add(100,122);
+		}
+		catch (Exception e)
+		{
+			System.out.println( " ERROR :: No se puede guardar en posicion inexistente" );	
+		}
+
+		show(enteros);
 	}
 }
 

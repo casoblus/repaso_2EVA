@@ -46,5 +46,12 @@ class TestArray
 		System.out
 				.println( Arrays.binarySearch( enteros, 34 ) );
 
+
+		String cadena = new String();
+		cadena = Arrays.toString(enteros);
+		
+		System.out
+				.println( cadena );
+
 	}
 }

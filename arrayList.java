@@ -29,6 +29,8 @@ class TestArrayList
 		enteros.add(12);
 		enteros.add(13);
 		enteros.add(34);
+
+		show( enteros );
 	}
 }
 
